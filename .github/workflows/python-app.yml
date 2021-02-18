@@ -30,6 +30,7 @@ jobs:
         pytest
       env:
         FUNCTIONS_WORKER_RUNTIME: "python"
+        Z_KEY: ${{ secrets.Z }}
     - name: "Show environment variables"
       run: |
           env
